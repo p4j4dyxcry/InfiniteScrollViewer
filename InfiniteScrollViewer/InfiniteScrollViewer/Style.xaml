@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:infiniteScrollViewer="clr-namespace:InfiniteScrollViewer">
+    <Style TargetType="infiniteScrollViewer:InfiniteScrollViewer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="infiniteScrollViewer:InfiniteScrollViewer">
+                    <Grid Background="{TemplateBinding Background}">
+                        <!--mouse focus target-->
+                        <Canvas>
+                            <Border Canvas.Top="-1000000" Canvas.Left="-1000000" Width="2000000" Height="2000000" Background="Transparent"/>
+                        </Canvas>
+                        <ContentPresenter Content="{TemplateBinding Content }"/>
+                        <ScrollBar
+                            x:Name="PART_XSlider"
+                            Margin="0,0,16,0"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Bottom"
+                            Opacity="0.9"
+                            Orientation="Horizontal" />
+                        <ScrollBar
+                            x:Name="PART_YSlider"
+                            Margin="0,0,0,16"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Stretch"
+                            Opacity="0.9"
+                            Orientation="Vertical" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>      
+    </Style>
+</ResourceDictionary>
