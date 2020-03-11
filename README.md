@@ -43,9 +43,10 @@ WPF の無限スクロールビューアーのシンプルな実装です。
 ```
 
 ## スクリーンショット
-- [TsNode](https://github.com/p4j4dyxcry/TsNode)
-の組み込み事例
+- [TsNode](https://github.com/p4j4dyxcry/TsNode)の組み込み事例
 ![](https://github.com/p4j4dyxcry/InfiniteScrollViewer/blob/master/InfiniteScrollViewer/ScreenShot/sample02.gif)
+
+---
 
 - Examplsの動作です。
 ![](https://github.com/p4j4dyxcry/InfiniteScrollViewer/blob/master/InfiniteScrollViewer/ScreenShot/sample01.gif)
